@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="CSS/slide.css">
+</head>
+<body>
+  <video autoplay muted loop id="videoback">
+    <source src="../img/vecteezy_particulas-brancas-com-fundo-azul_7635235.mp4"
+     type="video/mp4">
+</video>
+    <div class="swiper swiperTest">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" id="cuestionari">
+          <div class="swiper-slide" id="pregunta0">
+            <h3>Bienvenido, tienes tres minutos desde este momento para realizar este cuestionario</h3>
+            <h4>Da click en el botón azul para iniciar</h4>
+
+          </div>
+          <!-- Slides -->
+          <div class="swiper-slide" id="pregunta0">
+            <h2>1. ¿jQuery es una biblioteca de JavaScript que simplifica la programación de JavaScript.?</h2>
+            <input type="radio" name="pregunta0" value="verdadero" id="incorrecto"  >Verdadero 
+            <p id="correcto"></p>
+            <input type="radio" name="pregunta0" value="falso" >Falso
+          </div>
+          <div class="swiper-slide" id="pregunta1">
+            <h2>2. ¿JavaScript es un lenguaje de programación? </h2>
+            <input type="radio" name="pregunta1" value="verdadero">Verdadero<br>
+            <input type="radio" name="pregunta1" value="falso">Falso<br>
+          </div>
+           <div class="swiper-slide">
+            <h2>3. ¿HTML es un lenguaje de programación?</h2>
+            <input type="radio" name="pregunta2" value="verdadero"  >Verdadero 
+            <input type="radio" name="pregunta2" value="falso" >Falso
+           </div>
+           <div class="swiper-slide">
+            <h2>4. ¿CSS se utiliza para estilizar los elementos en una página web.?</h2>
+            <input type="radio" name="pregunta3" value="verdadero"  >Verdadero 
+            <input type="radio" name="pregunta3" value="falso" >Falso
+            </div>
+          <div class="swiper-slide">
+            <h2>5. ¿JavaScript no puede interactuar con el DOM.?</h2>
+            <input type="radio" name="pregunta4" value="verdadero"  >Verdadero 
+            <input type="radio" name="pregunta4" value="falso" >Falso
+          </div>
+          <div class="swiper-slide">
+            <h2>6. ¿Bootstrap es una biblioteca de JavaScript?</h2>
+            <input type="radio" name="pregunta5" value="verdadero"  >Verdadero 
+            <input type="radio" name="pregunta5" value="falso" >Falso
+
+
+          </div>
+          <div class="swiper-slide">
+            <h2>7. ¿Node.js permite ejecutar JavaScript en el servidor.?</h2>
+            <input type="radio" name="pregunta6" value="verdadero"  >Verdadero 
+            <input type="radio" name="pregunta6" value="falso" >Falso
+
+          </div>
+          <div class="swiper-slide">
+            <h2>8. ¿Vue.js es un marco de trabajo de backend.?</h2>
+            <input type="radio" name="pregunta7" value="verdadero">Verdadero 
+            <input type="radio" name="pregunta7" value="falso" >Falso
+
+
+          </div>
+          <div class="swiper-slide">
+            <h2>9 ¿Las consultas de medios son una característica de HTML5 utilizada para hacer que las páginas web sean responsivas.?</h2>
+           
+            <input type="radio" name="pregunta8" value="verdadero">Verdadero 
+            <input type="radio" name="pregunta8" value="falso" >Falso
+
+          </div>
+          <div class="swiper-slide">
+            <h2>10 ¿JSON es un tipo de base de datos.?</h2>
+            <input type="radio" name="pregunta9" value="verdadero">Verdadero 
+            <input type="radio" name="pregunta9" value="falso" >Falso
+
+          </div> 
+          <div class="swiper-slide">
+            <h3>Felicidades has concluido el cuestionario!</h3>
+            <button onclick="Calificar()">Calificar</button>
+            <p id="resultado"></p>
+            <button type="reset" onclick="reiniciar()"><a href="index.html">Reiniciar</a></button>
+           
+          </div>
+        </div>
+        
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+          <div class="boton-calificar">
+           
+            <p id="cronometro">05:00</p>  
+          </div>
+          
+
+          
+      </div>
+      <script src="JS/preguntas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+    <script src="JS/slider.js"></script>    
+</body>
+</html>
